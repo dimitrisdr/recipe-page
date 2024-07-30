@@ -1,0 +1,155 @@
+*,*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('C:\Users\jidri\OneDrive\Desktop\development\recipe-page-main\assets\fonts\outfit\Outfit-VariableFont_wght.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'young-serif' ;
+    src: url('assets\fonts\young-serif\YoungSerif-Regular.ttf');
+    font-weight: 400;
+}
+
+
+body {
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+    min-height: 100vh;
+    background-color:var(--Stone-100);
+    line-height: 1.6;
+    color: var(--Stone-600);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wraper, .main-content {
+    display: grid;
+}
+
+.wraper {
+    max-width: 650px;
+    background-color: var(--White);
+}
+
+.main-content {
+    padding-inline: 1rem;
+}
+
+.list {
+    padding-inline: 2rem;
+}
+
+.title {
+    color: var(--Stone-900);
+    font-family: young-serif;
+}
+
+.title, .ingrdiedients-item::marker, .instructions-item::marker {
+    color:var(--Brown-800)
+}
+
+.secondary-title {
+    font-size: 1.3rem;
+}
+
+.third-title {
+    font-size: 1.1rem;
+    font-family: young-serif;
+}
+
+.main-title {
+    color: black;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    font-family: young-serif;
+}
+
+.bottom-border {
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+.main-content-item {
+    padding-block: 2rem;
+}
+
+.recipe-guide-container {
+    background-color: var(--Rose-50);
+    padding-left: 1rem;
+    margin-top: 2rem;
+}
+
+.recipe-guide-container-title {
+    color:var(--Rose-800);
+}
+
+.recipe-guide-item::marker {
+    color: var(--Rose-800);
+}
+
+.calories-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calories-table td {
+    border-bottom: 1px solid var(--Stone-150);
+    padding-block: 0.4rem;
+}
+
+.calories-title {
+    padding-left: 1rem;
+}
+
+.calories-num {
+    font-weight: 700;
+    color: var(--Brown-800);
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:375px) {
+    .wraper {
+        margin-block: 2.5rem;
+    }
+    
+
+    .wraper,.img {
+        border-radius: 12px;
+    }
+
+    .img-container {
+        padding-inline:1rem;
+    }
+    
+}
